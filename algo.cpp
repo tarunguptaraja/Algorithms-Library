@@ -1,4 +1,4 @@
-// C++ program for Merge Sort
+
 #include <iostream>
 using namespace std;
 
@@ -74,7 +74,6 @@ void printArray(int A[], int size)
 		cout << A[i] << " ";
 }
 
-// Driver code
 int main()
 {
 	int arr[] = { 12, 11, 13, 5, 6, 7 };
@@ -90,5 +89,3 @@ int main()
 	return 0;
 }
 
-// This code is contributed by Mayank Tyagi
-// This code was revised by Joshua Estes
