@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form and table</title>
+</head>
+<!-- so now we have studied so far tr,th,td,thead,tbody,colspan,rowspan -->
+
+<body>
+    <h1>India's best cricketers </h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name </th>
+                <th colspan="2">match runs</th>
+            </tr>
+            <tr>
+                <th>odi Run </th>
+                <th>test run</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>M.S.Dhoni</th>
+                <td>1000</td>
+                <td>5004</td>
+            </tr>
+            <tr>
+                <th>sachin</th>
+                <td>17000</td>
+                <td>1020</td>
+            </tr>
+            <tr>
+                <th>Sahwag</th>
+                <td>15000</td>
+                <td>20400</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- form -->
+
+    <form action="/tacos">
+        <p>
+            <label for="harshit">Name: </label>
+            <input type="text" placeholder=" Enter your name" name="name" id="harshit">
+        </p>
+        <p>
+            <label for="harshit1">password:</label>
+            <input type="password" placeholder="Enter your password" name="password" id="harshit1">
+        </p>
+        <p>
+            <label for="harshit2">submit:</label>
+            <input type="submit" id="harshit2">
+        </p>
+        <p>
+            <label for="harshit3">married:</label>
+            <input type="radio" id="harshit3">
+        </p>
+    </form>
+
+    <h1>Hijacking searches</h1>
+    <h2>search raddit</h2>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>search</button>
+    </form>
+    <h2>search google</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>search Goolge</button>
+    </form>
+    <h2>search youtube</h2>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button> search</button>
+    </form>
+
+    <h2> some more inputs </h2>
+    <form action="bird">
+        <input type="checkbox" name="check" id="yeah">
+        <label for="yeah"> i agree to all</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="M">M</label>
+            <input type="radio" name="size" id="M" value="M" >
+        </p>
+        <h2>Best player of the year</h2>
+        <label for="bestone"> The best player is</label>
+        <select name="player" id="bestone">
+            <option value="Sachin">Sachin</option>
+            <option value="Sehwag">Sehwag</option>
+            <option value="Dhoni " selected>Dhoni</option>
+            <option value="Raina">Raina</option>
+            <option value="Kohli">Kohli</option>
+        </select>
+
+        <button>submit</button>
+        <p>
+        <input type="range" name="volume" id="volume" max="10" min="1" step="2"
+>
+        <label for="volume">volume</label>
+        <p>
+            <label for="story">tell us your story</label>
+            <input type="textarea" name="story" id="story"  rows="55" cols="533"
+             >
+        </p>
+    </p>
+    </form>
+
+    <!--hatdwkwjfwhfhwklfwiuhcdfqfwfwnflfifljlsdvsj-->
+
+    <!-- name attribute -->
+
+   <!--html validation--> 
+   <h2>validations demo</h2>
+   <form action="/demo">
+    <p><label for="user">Username</label>
+<input type="text" name="Username" id="User" required>
+<!--<button>submit</button>-->
+</p>
+<label for="fuser">User Father name</label>
+<input type="text" name="User Father name" id="fUser"  minlength="5" maxlength="15" required>
+<!--<button>submit</button>-->
+
+<p>
+    <label for="Submit">Submit</label>
+<input type="button" name="submit" id="Submit">
+
+</p>
+<p>
+    <input type="Submit">
+</p>
+
+   </form>
+   </body>
+
+</html>
