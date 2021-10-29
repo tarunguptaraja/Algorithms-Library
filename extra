@@ -1,0 +1,25 @@
+Some challenges for you 
+
+
+//first one 
+is the following code legal ?? 
+struct a {
+int x;
+struct a *b;
+}
+
+
+
+
+
+//second one 
+Tell me the output 
+void main()
+{
+static int i;
+while (i<=10)
+(i>2)?i++;i--;
+printf("%d",i);
+
+return 0;
+}
