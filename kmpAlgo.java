@@ -1,6 +1,8 @@
+// Time Complexity O(n)
 class KMP_String_Matching {
-	void KMPSearch(String pat, String txt)
-	{
+	
+	void KMPSearch(String pat, String txt){
+		
 		int M = pat.length();
 		int N = txt.length();
 
@@ -37,8 +39,8 @@ class KMP_String_Matching {
 		}
 	}
 
-	void computeLPSArray(String pat, int M, int lps[])
-	{
+	void computeLPSArray(String pat, int M, int lps[]) {
+		
 		// length of the previous longest prefix suffix
 		int len = 0;
 		int i = 1;
@@ -71,8 +73,7 @@ class KMP_String_Matching {
 		}
 	}
 
-	public static void main(String args[])
-	{
+	public static void main(String args[]) {
 		String txt = "ABABDABACDABABCABAB";
 		String pat = "ABABCABAB";
 		new KMP_String_Matching().KMPSearch(pat, txt);
